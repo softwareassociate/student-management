@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Student Management System{% endblock %}</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Student Management System
+        </div>
+
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/">Students</a>
+            <a href="/add">Add Student</a>
+            <a href="/about">About</a>
+        </div>
+
+    </nav>
+
+
+    
+    <main class="main-content">
+
+        {% block content %}
+
+        {% endblock %}
+
+    </main>
+
+
+    
+    <footer class="footer">
+
+        <h3>Student Management System</h3>
+
+        <p>Manage student information easily and efficiently.</p>
+
+        <p>© 2026 Student Management System</p>
+
+    </footer>
+
+</body>
+</html>
